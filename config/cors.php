@@ -13,7 +13,8 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        env('FRONTEND_URL', 'http://localhost:3000'),
+        'http://localhost:3000',
+        'https://karangtalun-web-iter.vercel.app',
     ],
 
     'allowed_origins_patterns' => [],
