@@ -2,12 +2,6 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Cross-Origin Resource Sharing (CORS) Configuration
-    |--------------------------------------------------------------------------
-    */
-
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
@@ -15,6 +9,7 @@ return [
     'allowed_origins' => [
         'http://localhost:3000',
         'https://karangtalun-web-iter.vercel.app',
+        'https://release1.sragenkab.go.id',
     ],
 
     'allowed_origins_patterns' => [],
@@ -25,6 +20,6 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => true,
+    'supports_credentials' => false,
 
 ];
