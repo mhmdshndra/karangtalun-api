@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["php", "php83Extensions.pdo_mysql", "nodejs"]
+nixPkgs = ["php83", "php83Extensions.pdo_mysql", "nodejs"]
 
 [start]
 cmd = "php artisan migrate --force && php artisan serve --host=0.0.0.0 --port=$PORT"
